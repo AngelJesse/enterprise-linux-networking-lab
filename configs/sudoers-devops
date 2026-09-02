@@ -1,0 +1,2 @@
+# DevOps Non-interactive Privilege Escalation Policy
+devops ALL=(ALL) NOPASSWD:ALL

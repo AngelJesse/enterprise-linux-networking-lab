@@ -1,0 +1,19 @@
+# OS Generated files
+.DS_Store
+Thumbs.db
+*.swp
+*.bak
+*~
+
+# SSH Keys (NEVER COMMIT PRIVATE KEYS)
+id_rsa
+id_ed25519
+*.pem
+*.key
+
+# Logs
+*.log
+
+# Temp files
+tmp/
+scratch/

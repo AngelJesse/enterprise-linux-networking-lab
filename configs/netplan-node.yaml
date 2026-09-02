@@ -1,0 +1,16 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens33:
+      dhcp4: no
+      addresses:
+        - 192.168.204.11/24
+      routes:
+        - to: default
+          via: 192.168.204.2
+      nameservers:
+        addresses:
+          - 192.168.204.2
+          - 1.1.1.1
+          - 8.8.8.8

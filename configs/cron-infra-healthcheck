@@ -1,0 +1,2 @@
+# Periodic healthcheck job executed every 2 minutes as root
+*/2 * * * * root /usr/local/bin/infra-healthcheck.sh > /dev/null 2>&1

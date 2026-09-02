@@ -1,0 +1,19 @@
+[Unit]
+Description=Enterprise Infrastructure Telemetry Agent
+Documentation=https://github.com/
+After=network.target
+
+[Service]
+Type=simple
+User=devops
+ExecStart=/opt/infra-agent/agent.sh
+Restart=always
+RestartSec=3s
+KillMode=process
+
+# Resource Accounting
+CPUAccounting=true
+MemoryAccounting=true
+
+[Install]
+WantedBy=multi-user.target
